@@ -457,6 +457,9 @@ void MotionHelper::service()
     {
         _motorEnabler.enableMotors(true, false);
     }
+
+    // Check for motor timeout
+    _motorEnabler.service();
 }
 
 // Set home coordinates
